@@ -5,7 +5,7 @@
   "keyboard": "ferris/sweep",
   "keymap": "ferris_sweep_layout_split_3x5_2_mine",
   "layout": "LAYOUT_split_3x5_2",
-  "name": "zmk-sweep"
+  "name": "zmk-sweep",
   "layers": [
     [
       "KC_Q",
