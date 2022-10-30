@@ -48,7 +48,7 @@
 
         symb_layer {
         bindings = <
-        &BT_SEL 1          &BT_SEL 2          &BT_SEL 3          &BT_SEL 4          &none              &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC
+        &BT_NXT            &BT_PRV            &none              &none              &none              &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC
         &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &kp ESC            &kp PLUS           &kp DLLR           &kp PRCNT          &kp CARET          &kp COLON
         &none              &kp RALT           &none              &kp DEL            &none              &kp PIPE           &kp EXCL           &kp AT             &kp HASH           &kp TILDE
                                                                  &none              &none              &kp UNDER          &kp RPAR
