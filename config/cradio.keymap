@@ -5,7 +5,7 @@
 // adjust mod-tap
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <300>;
+    tapping_term_ms = <200>;
 };
 
 / {
@@ -49,13 +49,13 @@
         symb_layer {
         bindings = <
         &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
+        &none              &none              &none              &none              &none              &none              &kp LBKT           &kp LBRC           &kp LPAR           &kp DQT
+        &none              &none              &none              &none              &none              &none              &kp RBKT           &kp RBRC           &kp RPAR           &kp SQT
                                                                  &none              &none              &none              &none
         >;
         };
 
-        numb_layer {
+        extend_layer {
         bindings = <
         &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
         &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
@@ -66,10 +66,10 @@
 
         navg_layer {
         bindings = <
+        &none              &none              &none              &none              &none              &none              &none              &none              &none              &kp 0
+        &kp 1              &kp 2              &kp 3              &kp 4              &kp 5              &kp 6              &kp 7              &kp 7              &kp 8              &kp 9
         &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-                                                                 &none              &none              &none              &none
+                                                                 &kp LSHFT          &none              &none              &none
         >;
         };
 
