@@ -1,22 +1,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-// adjust mod-tap
+#include <dt-bindings/zmk/bt.h>// adjust mod-tap
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
+
         combo_esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
-         };
+        };
+
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <7 8>;
@@ -24,71 +23,70 @@
         };
     };
 
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         cond_layer_mgmt {
             if-layers = <1 4>;
             then-layer = <5>;
         };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
-        bindings = <
-        &kp Q              &kp W              &kp F              &kp P              &kp B              &kp J              &kp L              &kp U              &kp Y              &kp APOS
-        &mt LGUI A         &mt LALT R         &mt LCTRL S        &mt LSHFT T        &kp G              &kp M              &mt LSHFT N        &mt LCTRL E        &mt LALT I         &mt LGUI O
-        &kp Z              &kp X              &kp C              &kp D              &kp V              &kp K              &kp H              &kp COMMA          &kp PERIOD         &kp SLASH
-                                                                 &lt 1 BSPC        &lt 2 ENTER         &lt 3 ESC        &lt 4 SPACE
-        >;
+            bindings = <
+      &kp Q       &kp W        &kp F        &kp P        &kp B      &kp J        &kp L        &kp U       &kp Y    &kp APOS
+ &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T        &kp G      &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O
+      &kp Z       &kp X        &kp C        &kp D        &kp V      &kp K        &kp H    &kp COMMA  &kp PERIOD   &kp SLASH
+                                       &lt 1 BSPC  &lt 2 ENTER  &lt 3 ESC  &lt 4 SPACE
+            >;
         };
 
         symb_layer {
-        bindings = <
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &kp LBKT           &kp LBRC           &kp LPAR           &kp DQT
-        &none              &none              &none              &none              &none              &none              &kp RBKT           &kp RBRC           &kp RPAR           &kp SQT
-                                                                 &none              &none              &none              &none
-        >;
+            bindings = <
+  &none   &none   &none   &none   &none   &none     &none     &none     &none    &none
+  &none   &none   &none   &none   &none   &none  &kp LBKT  &kp LBRC  &kp LPAR  &kp DQT
+  &none   &none   &none   &none   &none   &none  &kp RBKT  &kp RBRC  &kp RPAR  &kp SQT
+                          &none   &none   &none     &none
+            >;
         };
 
         extend_layer {
-        bindings = <
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-                                                                 &none              &none              &none              &none
-        >;
+            bindings = <
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+                          &none   &none   &none   &none
+            >;
         };
 
         navg_layer {
-        bindings = <
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &kp 0
-        &kp 1              &kp 2              &kp 3              &kp 4              &kp 5              &kp 6              &kp 7              &kp 7              &kp 8              &kp 9
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-                                                                 &kp LSHFT          &none              &none              &none
-        >;
+            bindings = <
+        &none         &none         &none         &none         &none         &none         &none         &none         &none         &kp 0
+ &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+        &none         &none         &none         &none         &none         &none         &none         &none         &none         &none
+                                               &kp LWIN         &none         &none         &none
+            >;
         };
 
         funt_layer {
-        bindings = <
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-        &none              &none              &none              &none              &none              &none              &none              &none              &none              &none
-                                                                 &none              &none              &none              &none
-        >;
+            bindings = <
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+                          &none   &none   &none   &none
+            >;
         };
 
         mgmt_layer {
-        bindings = <
-        &bt BT_CLR         &none              &none              &none              &none              &none             &none               &bootloader         &none              &none
-        &none              &bt BT_PRV         &none              &bt BT_NXT         &none              &none             &none               &none               &none              &none
-        &none              &none              &none              &none              &none              &none             &none               &none               &none              &none
-                                                                 &none              &none              &none             &none
-        >;
+            bindings = <
+ &bt BT_CLR       &none   &none       &none   &none   &none   &none  &bootloader   &none   &none
+      &none  &bt BT_PRV   &none  &bt BT_NXT   &none   &none   &none        &none   &none   &none
+      &none       &none   &none       &none   &none   &none   &none        &none   &none   &none
+                                      &none   &none   &none   &none
+            >;
         };
     };
 };
