@@ -47,7 +47,7 @@
 
         symb_layer {
             bindings = <
-  &none   &none   &none      &none          &none             &none     &none     &none     &none    &none
+ &reset   &none   &none      &none          &none             &none     &none     &none     &none    &none
   &none   &none   &none  &kp EQUAL      &kp COLON     &kp LESS_THAN  &kp LBKT  &kp LBRC  &kp LPAR   &kp AT
   &none   &none   &none   &kp PLUS  &kp SEMICOLON  &kp GREATER_THAN  &kp RBKT  &kp RBRC  &kp RPAR  &kp SQT
                              &none          &none             &none     &none
