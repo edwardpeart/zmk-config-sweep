@@ -38,19 +38,19 @@
 
         base_layer {
             bindings = <
-      &kp Q       &kp W        &kp F        &kp P         &kp B        &kp J        &kp L        &kp U       &kp Y    &kp APOS
- &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T         &kp G        &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O
-      &kp Z       &kp X        &kp C        &kp D         &kp V        &kp K        &kp H    &kp COMMA  &kp PERIOD   &kp SLASH
-                                      &lt 1 SPACE  &lt 2 ESCAPE  &lt 3 ENTER   &lt 4 BSPC
+      &kp Q       &kp W        &kp F        &kp P         &kp B            &kp J        &kp L        &kp U       &kp Y    &kp APOS
+ &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T         &kp G            &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O
+      &kp Z       &kp X        &kp C        &kp D         &kp V            &kp K        &kp H    &kp COMMA  &kp PERIOD   &kp SLASH
+                                      &lt 1 ENTER  &lt 2 ESCAPE  &lt 3 BACKSPACE  &lt 4 SPACE
             >;
         };
 
         symb_layer {
             bindings = <
- &bootloader   &none   &none      &none          &none             &none     &none     &none     &none    &none
-       &none   &none   &none  &kp EQUAL      &kp COLON     &kp LESS_THAN  &kp LBKT  &kp LBRC  &kp LPAR   &kp AT
-       &none   &none   &none   &kp PLUS  &kp SEMICOLON  &kp GREATER_THAN  &kp RBKT  &kp RBRC  &kp RPAR  &kp SQT
-                                  &none          &none             &none     &none
+ &bootloader        &none      &none      &none          &none             &none     &none     &none     &none    &none
+       &none  &kp PERCENT  &kp MINUS  &kp EQUAL      &kp COLON     &kp LESS_THAN  &kp LBKT  &kp LBRC  &kp LPAR   &kp AT
+       &none        &none  &kp UNDER   &kp PLUS  &kp SEMICOLON  &kp GREATER_THAN  &kp RBKT  &kp RBRC  &kp RPAR  &kp SQT
+                                          &none          &none             &none     &none
             >;
         };
 
