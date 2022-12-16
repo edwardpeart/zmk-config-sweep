@@ -50,5 +50,14 @@
                                                      &none   &none     &kp ENTER  &kp BACKSPACE
             >;
         };
+
+        Layer__2 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
+    &kp     &kp     &kp     &kp  &trans      &trans          &kp         &kp        &kp         &kp
+ &trans  &trans  &trans  &trans  &trans      &trans     &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT
+                         &trans  &trans         &kp          &kp
+            >;
+        };
     };
 };
