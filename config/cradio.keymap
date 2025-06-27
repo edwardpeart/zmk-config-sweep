@@ -46,7 +46,7 @@
         SYM {
             bindings = <
 &kp ESCAPE  &kp AT     &kp HASH          &kp DOLLAR        &kp PERCENT        &kp CARET                  &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &kp BACKSPACE
-&kp TAB     &kp EQUAL  &kp GREATER_THAN  &kp SQT           &kp DOUBLE_QUOTES  &mt HOME NON_US_BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp ENTER
+&kp TAB     &kp EQUAL  &kp GREATER_THAN  &kp SQT           &kp DOUBLE_QUOTES  &mt HOME NON_US_BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt END PIPE       &kp ENTER
 &kp TILDE   &trans     &kp LESS_THAN     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &to 2
                                          &to 0             &kp LSHIFT         &kp RIGHT_ALT              &to 3
             >;
